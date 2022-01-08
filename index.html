@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style.css">
+    <title>Perritos Aleatorios</title>
+</head>
+<body> <!--Documento principal de trabajo-->
+    <main> <!--Contenedor principal de la app-->
+        <div class="container"> <!--Contenedor de card-->
+            <h1><i>Aqui tienes a un perrito!!!!</i></h1> <!--Titulo-->
+            <figure> <!--contenedor de la imagen-->
+                <img id="imagen" src="https://cdn-icons-png.flaticon.com/512/91/91544.png" alt="perrito"> <!--Imagen-->
+            </figure>
+            <button class="btn">Generar perrito</button> <!--Boton en cargado de activar el consumo de la API-->
+            <div class="load" style="display: none"> <!--Indicador de carga-->
+                Loading...
+            </div>
+        </div>
+    </main>
+    <!-- scripts -->
+    <script src="app.js"></script>
+</body>
+</html>
