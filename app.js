@@ -10,7 +10,7 @@ const API = async ()=>{
         document.getElementById("imagen").setAttribute("src",data.message);
         console.log(data.status);
         document.querySelector(".load").setAttribute("style","display: none")
-    },2000)
+    },1000)
 
 }
 
