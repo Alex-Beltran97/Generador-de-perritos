@@ -1,8 +1,8 @@
 const button = document.querySelector(".btn");
 
 const API = async ()=>{
-    const laAPI = await fetch("https://dog.ceo/api/breeds/image/random");
-    const data = await laAPI.json();
+    const dogAPI = await fetch("https://dog.ceo/api/breeds/image/random");
+    const data = await dogAPI.json();
     
     document.querySelector(".load").setAttribute("style","display: in block")
     
@@ -11,7 +11,6 @@ const API = async ()=>{
         console.log(data.status);
         document.querySelector(".load").setAttribute("style","display: none")
     },1000)
-
 }
 
 button.addEventListener("click",API)
